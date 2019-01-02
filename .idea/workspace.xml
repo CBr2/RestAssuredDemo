@@ -32,13 +32,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="680" />
+          <entry key="java" value="1082" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="680" />
+          <entry key="JAVA" value="1082" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+            <state relative-caret-position="253">
+              <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#272#273#0" expanded="true" />
@@ -108,10 +108,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="691" />
-    <option name="y" value="277" />
-    <option name="width" value="1260" />
-    <option name="height" value="620" />
+    <option name="x" value="307" />
+    <option name="y" value="123" />
+    <option name="width" value="840" />
+    <option name="height" value="413" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -184,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546428484483" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546430013601" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -203,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TesterHomeTest.postDemo">
+  <component name="RunManager" selected="JUnit.TesterHomeTest.zuoye1Get">
     <configuration name="TesterHomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -242,17 +242,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesterHomeTest.zuoye1Get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <option name="METHOD_NAME" value="zuoye1Get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TesterHomeTest.topics" />
       <item itemvalue="JUnit.TesterHomeTest.getDemo" />
       <item itemvalue="JUnit.TesterHomeTest" />
       <item itemvalue="JUnit.TesterHomeTest.postDemo" />
+      <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
+        <item itemvalue="JUnit.TesterHomeTest.getDemo" />
         <item itemvalue="JUnit.TesterHomeTest.postDemo" />
         <item itemvalue="JUnit.TesterHomeTest" />
-        <item itemvalue="JUnit.TesterHomeTest.getDemo" />
         <item itemvalue="JUnit.TesterHomeTest.topics" />
       </list>
     </recent_temporary>
@@ -267,20 +279,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
-      <workItem from="1546393160069" duration="16944000" />
+      <workItem from="1546393160069" duration="18343000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TesterHomeTest - 2019.01.02 at 16h 02m 53s.xml">
-      <configuration name="TesterHomeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_getDemo - 2019.01.02 at 16h 35m 29s.xml">
-      <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_getDemo - 2019.01.02 at 16h 37m 07s.xml">
-      <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TesterHomeTest_postDemo - 2019.01.02 at 19h 09m 37s.xml">
       <configuration name="TesterHomeTest.postDemo" configurationId="JUnit" />
     </history-entry>
@@ -302,9 +305,18 @@
     <history-entry file="TesterHomeTest_postDemo - 2019.01.02 at 19h 27m 45s.xml">
       <configuration name="TesterHomeTest.postDemo" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TesterHomeTest_zuoye1Get - 2019.01.02 at 19h 48m 34s.xml">
+      <configuration name="TesterHomeTest.zuoye1Get" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_getDemo - 2019.01.02 at 19h 52m 28s.xml">
+      <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_zuoye1Get - 2019.01.02 at 19h 52m 52s.xml">
+      <configuration name="TesterHomeTest.zuoye1Get" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16944000" />
+    <option name="totallyTimeSpent" value="18343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -356,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        <state relative-caret-position="253">
+          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#272#273#0" expanded="true" />

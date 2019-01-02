@@ -28,10 +28,15 @@ public class TesterHomeTest {
                 .cookie("BAIDUID","8CB54A9066C557126099344569246B69:FG=1")
                 .cookie("PSTM","1516266460")
                 .cookie("BIDUPSID","766B87CF9897D7AE508966E8E476D4B9")
+                .cookie("BDUSS","XgzMXZFbC04LXJwQnRpb0ZTNGVtWEs1T3Y0Q3JGWmhwWHJ0R1d6RTE3Q0dTZUpiQVFBQUFBJCQAAAAAAAAAAAEAAABlUikks8IxMjA1OTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIa8uluGvLpbU")
+                .cookie("MCITY","-131%3A")
+                .cookie("BD_UPN","12314753")
+                .cookie("H_PS_645EC","776d1czmoCjkPZqSSOfAYf%2BaRJFpEf2BdlWJo3I7BFM35p9XQUUyUc9GSHuW7gvBxp2k")
+                .cookie("","")
                 .header("User-Agent",
                         "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
-                .header("Cookie",//cookie属于header部分
-                        "BDUSS=XgzMXZFbC04LXJwQnRpb0ZTNGVtWEs1T3Y0Q3JGWmhwWHJ0R1d6RTE3Q0dTZUpiQVFBQUFBJCQAAAAAAAAAAAEAAABlUikks8IxMjA1OTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIa8uluGvLpbU; MCITY=-131%3A; BD_UPN=12314753; H_PS_645EC=776d1czmoCjkPZqSSOfAYf%2BaRJFpEf2BdlWJo3I7BFM35p9XQUUyUc9GSHuW7gvBxp2k; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; BD_CK_SAM=1; PSINO=2; BDSVRTM=221; H_PS_PSSID=26524_1446_25809_21079_18559_20691_28206_28131_26350_27244; WWW_ST=1546413044067")
+               .header("Cookie",//cookie属于header部分
+                        "BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; BD_CK_SAM=1; PSINO=2; BDSVRTM=221; H_PS_PSSID=26524_1446_25809_21079_18559_20691_28206_28131_26350_27244; WWW_ST=1546413044067")
         .get("https://www.baidu.com/s")
         .then()
                 .log().all()
@@ -49,4 +54,19 @@ public class TesterHomeTest {
         .when().post("http://jenkins.testing-studio.com:8080/j_acegi_security_check")
         .then().statusCode(302);
     }
+    @Test
+    //作业一：编写测试用例，实现发起get请求，搜索“霍格沃兹 测试学院”，断言状态码是否正确
+    public void zuoye1Get(){
+        given()
+                .log().all()
+                .proxy(8080)
+                .param("wd","霍格沃兹 测试学院")
+                .param("ie","utf-8")
+        .get("https://www.baidu.com/s")
+        .then()
+                .log().all()
+                .statusCode(200);
+    }
+    @Test
+    //作业二：编写post测试用例，登陆雪球，输入错误的用户名密码即可
 }
