@@ -69,4 +69,14 @@ public class TesterHomeTest {
     }
     @Test
     //作业二：编写post测试用例，登陆雪球，输入错误的用户名密码即可
+    public void zuoye2(){
+        given()
+                .proxy(8080)
+                .param("username","CBr2")
+                .param("password","123")
+        .when().post("https://xueqiu.com/snowman/login")
+        .then()
+                .log().all()
+                .statusCode(302);
+    }
 }

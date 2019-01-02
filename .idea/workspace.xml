@@ -32,13 +32,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1082" />
+          <entry key="java" value="1148" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1082" />
+          <entry key="JAVA" value="1148" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+            <state relative-caret-position="286">
+              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#272#273#0" expanded="true" />
@@ -184,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546430013601" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546430958145" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -203,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TesterHomeTest.zuoye1Get">
+  <component name="RunManager" selected="JUnit.TesterHomeTest.zuoye2">
     <configuration name="TesterHomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -232,16 +232,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesterHomeTest.topics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
-      <option name="METHOD_NAME" value="topics" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TesterHomeTest.zuoye1Get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -252,20 +242,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesterHomeTest.zuoye2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <option name="METHOD_NAME" value="zuoye2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.TesterHomeTest.topics" />
       <item itemvalue="JUnit.TesterHomeTest.getDemo" />
       <item itemvalue="JUnit.TesterHomeTest" />
       <item itemvalue="JUnit.TesterHomeTest.postDemo" />
       <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
+      <item itemvalue="JUnit.TesterHomeTest.zuoye2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TesterHomeTest.zuoye2" />
         <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
         <item itemvalue="JUnit.TesterHomeTest.getDemo" />
         <item itemvalue="JUnit.TesterHomeTest.postDemo" />
         <item itemvalue="JUnit.TesterHomeTest" />
-        <item itemvalue="JUnit.TesterHomeTest.topics" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +279,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
-      <workItem from="1546393160069" duration="18343000" />
+      <workItem from="1546393160069" duration="19078000" />
     </task>
     <servers />
   </component>
@@ -316,7 +316,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18343000" />
+    <option name="totallyTimeSpent" value="19078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -368,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="70" column="38" lean-forward="true" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+        <state relative-caret-position="286">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#272#273#0" expanded="true" />
