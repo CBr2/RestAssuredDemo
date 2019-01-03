@@ -108,5 +108,13 @@ public class TesterHomeTest {
                 //这里运行失败，老师说是百度的bug，百度更新了网页 有个代码他们写错了 浏览器解析存在容错机制没问题  但是xpath发现不是标准xml
                // .body(hasXPath("//*[@class='nums_text' and contains(text(), '百度为您找到相关结果约55,500,000个')]"));
     }
-    
+    @Test
+    public void JsonPathDemo(){
+        given()
+        .when()
+        .get("https://testerhome.com/api/v3/topics.json")
+        .then().statusCode(200)
+                .body("topics.title[0]",equalTo("用一个「关键词」总结你的 2018，你会选什么？"));
+    }
+
 }
