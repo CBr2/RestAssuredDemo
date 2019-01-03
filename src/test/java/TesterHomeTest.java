@@ -105,5 +105,8 @@ public class TesterHomeTest {
                 .statusCode(200)
                 .body("html.head.title",equalTo("mp3_百度搜索"))
                 .body("**.findAll{it.@class=='nums_text'}",equalTo("百度为您找到相关结果约55,500,000个"));
+                //这里运行失败，老师说是百度的bug，百度更新了网页 有个代码他们写错了 浏览器解析存在容错机制没问题  但是xpath发现不是标准xml
+               // .body(hasXPath("//*[@class='nums_text' and contains(text(), '百度为您找到相关结果约55,500,000个')]"));
     }
+    
 }
