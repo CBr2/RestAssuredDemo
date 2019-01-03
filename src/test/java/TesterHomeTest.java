@@ -147,5 +147,19 @@ public class TesterHomeTest {
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number.toInteger()", equalTo(1))
                 .body("**.findAll{it.number=='1'}[-1].url",equalTo("http://jenkins.testing-studio.com:8080/job/AllureDemo/1/"));
     }
+    @Test
+    public void hamcrestDemo(){
+        given()
+                .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
+                .then()
+                .statusCode(200)
+                .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
+                .body("..lastBuild.number.toFloat()",greaterThanOrEqualTo(19f))
+                .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(16))
+                //数字断言
+                .body("**.find {it.name()=='lastSuccessfulBuild'}.number", equalTo("1"))
+                .body("**.find {it.name()=='lastSuccessfulBuild'}.number.toInteger()", equalTo(1))
+                .body("**.findAll{it.number=='1'}[-1].url",equalTo("http://jenkins.testing-studio.com:8080/job/AllureDemo/1/"));
+    }
 
 }
