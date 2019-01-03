@@ -110,11 +110,17 @@ public class TesterHomeTest {
     }
     @Test
     public void JsonPathDemo(){
+        String title = "写下 2019 你的三个小目标";
         given()
         .when()
         .get("https://testerhome.com/api/v3/topics.json")
         .then().statusCode(200)
-                .body("topics.title[0]",equalTo("IPAD 如何隐藏键盘"));
+                .body("topics.title[0]",equalTo("如何说服一个前端修改其 bug？"))
+                .body("topics.size()",equalTo(20))
+        //curl 'https://testerhome.com/api/v3/topics.json' |grep -o title |wc-l  验证title个数
+                //.body("topics.findAll{it.title.contains('写下 2019 你的三个小目标')}.title",equalTo("[写下 2019 你的三个小目标]"))
+                //findAll返回数组
+                 .body("topics.find{it.title.contains('写下 2019 你的三个小目标')}.title",equalTo(title));
     }
 
 }
