@@ -140,7 +140,8 @@ public class TesterHomeTest {
         .then()
                 .statusCode(200)
                 .body("freeStyleProject.displayName",equalTo("AllureDemo"))
-                .body("..lastBuild.number",equalTo("19"));//结果值默认是字符串类型
+                .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
+                .body("..lastBuild.number.toFloat()",equalTo(19f));
     }
 
 }
