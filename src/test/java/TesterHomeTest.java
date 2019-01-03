@@ -40,9 +40,7 @@ public class TesterHomeTest {
         .get("https://www.baidu.com/s")
         .then()
                 .log().all()
-                .statusCode(200)
-                .body("html.head.title",equalTo("mp3_百度搜索"))
-                .body("**.findAll{it.@class=='nums_text'}",equalTo("百度为您找到相关结果约55,500,000个"));
+                .statusCode(200);
     }
     @Test
     public void postDemo(){
@@ -80,5 +78,32 @@ public class TesterHomeTest {
         .then()
                 .log().all()
                 .statusCode(302);
+    }
+    @Test
+    public void HtmlPathDemo(){
+        given()
+                .log().all()
+                .proxy(8080)
+                .param("wd","mp3")
+                .param("ie","utf-8")
+                //如果用cookie，就要写全，否则会导致丢失，后面的header会不生效
+                .cookie("BAIDUID","8CB54A9066C557126099344569246B69:FG=1")
+                .cookie("PSTM","1516266460")
+                .cookie("BIDUPSID","766B87CF9897D7AE508966E8E476D4B9")
+                .cookie("BDUSS","XgzMXZFbC04LXJwQnRpb0ZTNGVtWEs1T3Y0Q3JGWmhwWHJ0R1d6RTE3Q0dTZUpiQVFBQUFBJCQAAAAAAAAAAAEAAABlUikks8IxMjA1OTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIa8uluGvLpbU")
+                .cookie("MCITY","-131%3A")
+                .cookie("BD_UPN","12314753")
+                .cookie("H_PS_645EC","776d1czmoCjkPZqSSOfAYf%2BaRJFpEf2BdlWJo3I7BFM35p9XQUUyUc9GSHuW7gvBxp2k")
+                .cookie("","")
+                .header("User-Agent",
+                        "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+                .header("Cookie",//cookie属于header部分
+                        "BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; BD_CK_SAM=1; PSINO=2; BDSVRTM=221; H_PS_PSSID=26524_1446_25809_21079_18559_20691_28206_28131_26350_27244; WWW_ST=1546413044067")
+                .get("https://www.baidu.com/s")
+                .then()
+                .log().all()
+                .statusCode(200)
+                .body("html.head.title",equalTo("mp3_百度搜索"))
+                .body("**.findAll{it.@class=='nums_text'}",equalTo("百度为您找到相关结果约55,500,000个"));
     }
 }

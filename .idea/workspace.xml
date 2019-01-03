@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1260" />
+          <entry key="java" value="1261" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1260" />
+          <entry key="JAVA" value="1261" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
@@ -58,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+            <state relative-caret-position="146">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#272#273#0" expanded="true" />
@@ -190,7 +188,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546486782121" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546491321549" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -209,11 +207,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TesterHomeTest.getDemo">
+  <component name="RunManager" selected="JUnit.TesterHomeTest.HtmlPathDemo">
     <configuration name="TesterHomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesterHomeTest.HtmlPathDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <option name="METHOD_NAME" value="HtmlPathDemo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,16 +231,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
       <option name="METHOD_NAME" value="getDemo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesterHomeTest.postDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
-      <option name="METHOD_NAME" value="postDemo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -261,17 +259,17 @@
     <list>
       <item itemvalue="JUnit.TesterHomeTest.getDemo" />
       <item itemvalue="JUnit.TesterHomeTest" />
-      <item itemvalue="JUnit.TesterHomeTest.postDemo" />
       <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
       <item itemvalue="JUnit.TesterHomeTest.zuoye2" />
+      <item itemvalue="JUnit.TesterHomeTest.HtmlPathDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TesterHomeTest.HtmlPathDemo" />
         <item itemvalue="JUnit.TesterHomeTest.getDemo" />
         <item itemvalue="JUnit.TesterHomeTest" />
         <item itemvalue="JUnit.TesterHomeTest.zuoye2" />
         <item itemvalue="JUnit.TesterHomeTest.zuoye1Get" />
-        <item itemvalue="JUnit.TesterHomeTest.postDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -285,17 +283,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
-      <workItem from="1546393160069" duration="22883000" />
+      <workItem from="1546393160069" duration="23544000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TesterHomeTest_zuoye2 - 2019.01.02 at 20h 08m 59s.xml">
-      <configuration name="TesterHomeTest.zuoye2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_zuoye2 - 2019.01.02 at 20h 09m 25s.xml">
-      <configuration name="TesterHomeTest.zuoye2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TesterHomeTest - 2019.01.03 at 10h 19m 15s.xml">
       <configuration name="TesterHomeTest" configurationId="JUnit" />
     </history-entry>
@@ -320,9 +312,15 @@
     <history-entry file="TesterHomeTest_getDemo - 2019.01.03 at 11h 37m 27s.xml">
       <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TesterHomeTest_getDemo - 2019.01.03 at 11h 39m 23s.xml">
+      <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_getDemo - 2019.01.03 at 11h 39m 50s.xml">
+      <configuration name="TesterHomeTest.getDemo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22883000" />
+    <option name="totallyTimeSpent" value="23544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,6 +333,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -382,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+        <state relative-caret-position="146">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#272#273#0" expanded="true" />
