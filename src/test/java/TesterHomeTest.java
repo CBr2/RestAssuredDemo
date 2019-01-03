@@ -40,7 +40,9 @@ public class TesterHomeTest {
         .get("https://www.baidu.com/s")
         .then()
                 .log().all()
-                .statusCode(200);
+                .statusCode(200)
+                .body("html.head.title",equalTo("mp3_百度搜索"))
+                .body("**.findAll{it.@class=='nums_text'}",equalTo("百度为您找到相关结果约55,500,000个"));
     }
     @Test
     public void postDemo(){
