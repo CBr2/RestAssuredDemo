@@ -173,4 +173,26 @@ public class TesterHomeTest {
          //这里再看看
                 .body("freeStyleProject.build.findAll{it.number.toInteger()>16}.url",hasItem("http://jenkins.testing-studio.com:8080/job/AllureDemo/18/"));
     }
+    @Test
+    public void jsonPost() {
+        HashMap<String, Object> data = new HashMap<String, Object>();
+        data.put("name", "广州研发中心");
+        data.put("parentid", 1);
+        data.put("order", 1);
+        data.put("id", 2);
+
+        given().proxy(8080)
+                .queryParam("access_token", "xxxxx")
+                .contentType(ContentType.JSON)
+                .body("{\"name\":\"北京研发中心\",\"id\":2,\"parentid\":1,\"order\":1}")
+                .when()
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
+        given().proxy(8080)
+                .queryParam("access_token", "xxxxx")
+                .contentType(ContentType.JSON)
+                .body(data)
+                .when()
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
+
+    }
 }
