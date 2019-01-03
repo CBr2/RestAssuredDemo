@@ -150,8 +150,8 @@ public class TesterHomeTest {
     @Test
     public void hamcrestDemo(){
         given()
-                .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
-                .then()
+        .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
+        .then()
                 .statusCode(200)
                 .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
                 .body("..lastBuild.number.toFloat()",greaterThanOrEqualTo(19f))
@@ -162,5 +162,15 @@ public class TesterHomeTest {
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number.toInteger()", equalTo(1))
                 .body("**.findAll{it.number=='1'}[-1].url",equalTo("http://jenkins.testing-studio.com:8080/job/AllureDemo/1/"));
     }
-
+    @Test
+    //作业四：http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml 判断构建号>16并且节点名字等于build的job的url地址
+    public void ZuoYe4(){
+        given()
+        .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
+        .then()
+                .statusCode(200)
+                .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(16))
+         //这里再看看
+                .body("freeStyleProject.build.findAll{it.number.toInteger()>16}.url",hasItem("http://jenkins.testing-studio.com:8080/job/AllureDemo/18/"));
+    }
 }
