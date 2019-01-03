@@ -142,6 +142,7 @@ public class TesterHomeTest {
                 .body("freeStyleProject.displayName",equalTo("AllureDemo"))
                 .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
                 .body("..lastBuild.number.toFloat()",equalTo(19f))
+                //数字断言
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number", equalTo("1"))
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number.toInteger()", equalTo(1))
                 .body("**.findAll{it.number=='1'}[-1].url",equalTo("http://jenkins.testing-studio.com:8080/job/AllureDemo/1/"));
