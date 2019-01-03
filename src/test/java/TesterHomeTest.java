@@ -15,7 +15,7 @@ public class TesterHomeTest {
         useRelaxedHTTPSValidation();//实现对https网站的处理
         get("https://testerhome.com/api/v3/topics.json")
                 .then()
-                .body("topics[0].title",containsString("MixMonkey 基于 Android Monkey"));
+                .body("topics[0].title",containsString("如何说服一个前端修改其 bug？"));
     }
     @Test
     public void getDemo(){
@@ -59,7 +59,7 @@ public class TesterHomeTest {
     public void zuoye1Get(){
         given()
                 .log().all()
-                .proxy(8080)
+          //      .proxy(8080)
                 .param("wd","霍格沃兹 测试学院")
                 .param("ie","utf-8")
         .get("https://www.baidu.com/s")
@@ -71,7 +71,7 @@ public class TesterHomeTest {
     //作业二：编写post测试用例，登陆雪球，输入错误的用户名密码即可
     public void zuoye2(){
         given()
-                .proxy(8080)
+          //      .proxy(8080)
                 .param("username","CBr2")
                 .param("password","123")
         .when().post("https://xueqiu.com/snowman/login")
