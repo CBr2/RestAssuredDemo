@@ -124,13 +124,13 @@ public class TesterHomeTest {
 
     }
     @Test
-    //找出来testerhome帖子回复数大于等于6的所有帖子数是不是等于特定数量
+    //作业三：找出来testerhome帖子回复数大于等于6的所有帖子数是不是等于8
     public void ZuoYe3(){
         given()
         .when()
         .get("https://testerhome.com/api/v3/topics.json")
         .then().statusCode(200)
-                .body("","");
+                .body("topics.findAll{it.replies_count>6}.size()",equalTo(8));
         //curl 'https://testerhome.com/api/v3/topics.json' |grep -oE "replies_count[^,]*"查看帖子回复数，[^,]*表示0个或多个不为,的字符
     }
 
