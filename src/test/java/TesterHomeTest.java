@@ -155,7 +155,8 @@ public class TesterHomeTest {
                 .statusCode(200)
                 .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
                 .body("..lastBuild.number.toFloat()",greaterThanOrEqualTo(19f))
-                .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(16))
+                .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(19))
+                .body("..lastBuild.number.toDouble()",closeTo(19,2))
                 //数字断言
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number", equalTo("1"))
                 .body("**.find {it.name()=='lastSuccessfulBuild'}.number.toInteger()", equalTo(1))
