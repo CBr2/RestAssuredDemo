@@ -139,7 +139,8 @@ public class TesterHomeTest {
         .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
         .then()
                 .statusCode(200)
-                .body("freeStyleProject.displayName",equalTo("AllureDemo"));
+                .body("freeStyleProject.displayName",equalTo("AllureDemo"))
+                .body("..lastBuild.number",equalTo("19"));//结果值默认是字符串类型
     }
 
 }
