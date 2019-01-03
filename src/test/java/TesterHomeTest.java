@@ -141,7 +141,8 @@ public class TesterHomeTest {
                 .statusCode(200)
                 .body("freeStyleProject.displayName",equalTo("AllureDemo"))
                 .body("..lastBuild.number",equalTo("19"))//结果值默认是字符串类型
-                .body("..lastBuild.number.toFloat()",equalTo(19f));
+                .body("..lastBuild.number.toFloat()",equalTo(19f))
+                .body("**.findAll{it.number=='1'}[-1].url",equalTo("http://jenkins.testing-studio.com:8080/job/AllureDemo/1/"));
     }
 
 }
