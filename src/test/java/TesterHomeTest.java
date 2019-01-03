@@ -133,5 +133,13 @@ public class TesterHomeTest {
                 .body("topics.findAll{it.replies_count>6}.size()",equalTo(8));
         //curl 'https://testerhome.com/api/v3/topics.json' |grep -oE "replies_count[^,]*"查看帖子回复数，[^,]*表示0个或多个不为,的字符
     }
+    @Test
+    public void xmlPathDemo(){
+        given()
+        .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
+        .then()
+                .statusCode(200)
+                .body("freeStyleProject.displayName",equalTo("AllureDemo"));
+    }
 
 }
