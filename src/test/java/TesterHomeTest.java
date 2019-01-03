@@ -121,6 +121,17 @@ public class TesterHomeTest {
                 //.body("topics.findAll{it.title.contains('写下 2019 你的三个小目标')}.title",equalTo("[写下 2019 你的三个小目标]"))
                 //findAll返回数组
                  .body("topics.find{it.title.contains('写下 2019 你的三个小目标')}.title",equalTo(title));
+
+    }
+    @Test
+    //找出来testerhome帖子回复数大于等于6的所有帖子数是不是等于特定数量
+    public void ZuoYe3(){
+        given()
+        .when()
+        .get("https://testerhome.com/api/v3/topics.json")
+        .then().statusCode(200)
+                .body("","");
+        //curl 'https://testerhome.com/api/v3/topics.json' |grep -oE "replies_count[^,]*"查看帖子回复数，[^,]*表示0个或多个不为,的字符
     }
 
 }
