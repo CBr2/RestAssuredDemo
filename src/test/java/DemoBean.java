@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class DemoBean {
     public String getName() {
+
         return name;
     }
 
@@ -35,10 +36,10 @@ public class DemoBean {
         this.order = order;
     }
 
-    
-    String name;
-    Integer id;
-    Integer parentid;
-    Integer order;
+//    @JacksonXmlProperty(localName = "first_name")
+    private String name;
+    private Integer id;
+    private Integer parentid;
+    private Integer order;
 
 }
