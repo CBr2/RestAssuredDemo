@@ -1,9 +1,18 @@
+import io.restassured.http.ContentType;
+import io.restassured.mapper.ObjectMapperType;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
+import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.hamcrest.Matchers.*;
+
 
 public class TesterHomeTest {
     @BeforeClass
@@ -181,12 +190,12 @@ public class TesterHomeTest {
         data.put("order", 1);
         data.put("id", 2);
 
-        given().proxy(8080)
+       /* given().proxy(8080)
                 .queryParam("access_token", "xxxxx")
                 .contentType(ContentType.JSON)
                 .body("{\"name\":\"北京研发中心\",\"id\":2,\"parentid\":1,\"order\":1}")
                 .when()
-                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");   */
         given().proxy(8080)
                 .queryParam("access_token", "xxxxx")
                 .contentType(ContentType.JSON)
@@ -194,5 +203,14 @@ public class TesterHomeTest {
                 .when()
                 .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
 
+    }
+    @Test
+    public void timeoutDemo(){
+        given().log().all().when()
+                .get("https://testerhome.com/api/v3/topics.json")
+                .then().log().all()
+                    .body("topics[0].title",containsString("区块链"))
+                    .time(lessThanOrEqualTo(2L),TimeUnit.SECONDS)
+                    .time(lessThanOrEqualTo(2000L),TimeUnit.MILLISECONDS);
     }
 }
