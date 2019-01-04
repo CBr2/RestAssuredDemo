@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.hamcrest.Matchers.*;
-
+import static io.restassured.module.jsv.JsonSchemaValidator.*;
 
 public class TesterHomeTest {
     @BeforeClass
@@ -225,9 +225,9 @@ public class TesterHomeTest {
     }
     @Test
     public void schema(){
-        given().when().get("https://testerhome.com/api/v3/topics/6040.json")
-                .then();
-           //     .body(matchesJsonSchema(new File("/tmp/2.json")));
+        given().when().get("https://testerhome.com/api/v3/topics.json")
+                .then()
+                .body(matchesJsonSchema(new File("/tmp/2.json")));
     }
     @Test
     //作业五：http://jenkins.testing-studio.com:8080/job/AllureDemo/api/json 编写json schema校验用例

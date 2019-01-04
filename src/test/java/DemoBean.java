@@ -36,7 +36,7 @@ public class DemoBean {
         this.order = order;
     }
 
-//    @JacksonXmlProperty(localName = "first_name")
+  //  @JacksonXmlProperty(localName = "first_name")
     private String name;
     private Integer id;
     private Integer parentid;
