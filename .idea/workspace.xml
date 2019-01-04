@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+            <state relative-caret-position="195">
+              <caret line="215" column="1" lean-forward="true" selection-start-line="215" selection-start-column="1" selection-end-line="215" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#279#280#0" expanded="true" />
@@ -211,7 +207,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546573672243" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546581018423" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -308,7 +304,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
-      <workItem from="1546393160069" duration="46393000" />
+      <workItem from="1546393160069" duration="46766000" />
     </task>
     <servers />
   </component>
@@ -345,7 +341,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46393000" />
+    <option name="totallyTimeSpent" value="46766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -358,6 +354,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -419,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+        <state relative-caret-position="195">
+          <caret line="215" column="1" lean-forward="true" selection-start-line="215" selection-start-column="1" selection-end-line="215" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
