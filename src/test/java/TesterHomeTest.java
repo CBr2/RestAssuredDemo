@@ -202,15 +202,36 @@ public class TesterHomeTest {
                 .body(data)
                 .when()
                 .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
+    }
 
+    @Test
+    public void xmlPostDemo(){
+        given().proxy(8080)
+                .queryParam("access_token", "xxxxx")
+                .contentType(ContentType.XML)
+                .body(new DemoBean(),ObjectMapperType.JAXB)
+                .when()
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create");
     }
     @Test
     public void timeoutDemo(){
         given().log().all().when()
                 .get("https://testerhome.com/api/v3/topics.json")
                 .then().log().all()
-                    .body("topics[0].title",containsString("区块链"))
+                    .body("topics[0].title",containsString("Appium Studio"))
                     .time(lessThanOrEqualTo(2L),TimeUnit.SECONDS)
                     .time(lessThanOrEqualTo(2000L),TimeUnit.MILLISECONDS);
+
+    }
+    @Test
+    public void schema(){
+        given().when().get("https://testerhome.com/api/v3/topics/6040.json")
+                .then();
+           //     .body(matchesJsonSchema(new File("/tmp/2.json")));
+    }
+    @Test
+    //作业五：http://jenkins.testing-studio.com:8080/job/AllureDemo/api/json 编写json schema校验用例
+    public void Demo(){
+
     }
 }
