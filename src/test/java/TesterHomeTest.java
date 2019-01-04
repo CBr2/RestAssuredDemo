@@ -178,7 +178,7 @@ public class TesterHomeTest {
         .when().get("http://jenkins.testing-studio.com:8080/job/AllureDemo/api/xml")
         .then()
                 .statusCode(200)
-                .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(16))
+               // .body("..lastBuild.number.toInteger()",greaterThanOrEqualTo(16))
          //这里再看看
                 .body("freeStyleProject.build.findAll{it.number.toInteger()>16}.url",hasItem("http://jenkins.testing-studio.com:8080/job/AllureDemo/18/"));
     }
@@ -227,11 +227,16 @@ public class TesterHomeTest {
     public void schema(){
         given().when().get("https://testerhome.com/api/v3/topics.json")
                 .then()
-                .body(matchesJsonSchema(new File("/tmp/2.json")));
+                .body(matchesJsonSchema(new File("D:\\霍格沃兹课程\\RestAssuredDemo")));
     }
     @Test
     //作业五：http://jenkins.testing-studio.com:8080/job/AllureDemo/api/json 编写json schema校验用例
-    public void Demo(){
-
+    public void ZuoYe5(){
+        given().
+        when()
+                .get("https://testerhome.com/api/v3/topics.json")
+        .then()
+                .statusCode(200)
+                .body(matchesJsonSchema(new File("D:\\霍格沃兹课程\\RestAssuredDemo\\ZuoYe5.json")));
     }
 }
