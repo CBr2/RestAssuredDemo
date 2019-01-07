@@ -1,5 +1,6 @@
 import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapperType;
+import io.restassured.response.ValidatableResponse;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -257,15 +258,42 @@ public class TesterHomeTest {
     }
     @Test
     //extract实例，指所有处于extract后面的内容，将返回的数据存储给相应的变量
-    public void extractDemo(){
-        given().log().all()
+    public void extractDemo1(){
+        HashMap<String, Object> topic=given()
+                //.log().all()
         .when()
         .get("https://testerhome.com/api/v3/topics.json").prettyPeek()
-        .then().log().all()
+        .then()
+                //.log().all()
                 .statusCode(200)
-                .extract()
+                .extract().path("topics.find{it.title.contains(\"求教\")}");
+        System.out.println(topic);
 
+        String login=given()
+                //.log().all()
+                .when()
+                .get("https://testerhome.com/api/v3/topics.json").prettyPeek()
+                .then()
+                //.log().all()
+                .statusCode(200)
+                .extract().path("topics.find{it.title.contains(\"求教\")}.user.login");
+        System.out.println(login);
     }
+    @Test
+    //extract实例，指所有处于extract后面的内容，将返回的数据存储给相应的变量,extractDemo1优化版
+    public void extractDemo2(){
+       ValidatableResponse validatableResponse=given().log().all()
+                .when()
+                .get("https://testerhome.com/api/v3/topics.json").prettyPeek()
+                .then().log().all()
+                .statusCode(200);
+
+       HashMap<String,Object>topic=validatableResponse.extract().path("topics.find{it.title.contains(\"求教\")}");
+       String login=validatableResponse.extract().path("topics.find{it.title.contains(\"求教\")}.user.login");
+        System.out.println(topic);
+        System.out.println(login);
+    }
+
 
 
 }
