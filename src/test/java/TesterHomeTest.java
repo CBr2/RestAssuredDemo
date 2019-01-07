@@ -310,11 +310,5 @@ public class TesterHomeTest {
         System.out.println(login);
     }
 
-    @Test
-    public void Demo(){
-
-    }
-
-
 }
 
