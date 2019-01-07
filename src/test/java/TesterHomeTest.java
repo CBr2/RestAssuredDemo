@@ -296,6 +296,7 @@ public class TesterHomeTest {
     }
     @Test
     //extract实例，指所有处于extract后面的内容，将返回的数据存储给相应的变量,extractDemo1最终版;
+    //找到topic存储到topic变量，找到帖子的login存储到login变量
     public void extractDemo3(){
         Response response=given().log().all()
                 .when().get("https://testerhome.com/api/v3/topics.json").prettyPeek()
@@ -303,10 +304,16 @@ public class TesterHomeTest {
                 .statusCode(200)
                 .extract().response();
 
-        HashMap<String,Object>topic=validatableResponse.extract().path("topics.find{it.title.contains(\"求教\")}");
-        String login=validatableResponse.extract().path("topics.find{it.title.contains(\"求教\")}.user.login");
+        HashMap<String,Object> topic=response.path("topics.find{it.title.contains(\"求教\")}");
+        String login=response.path("topics.find{it.title.contains(\"求教\")}.user.login");
+        System.out.println(topic);
+        System.out.println(login);
     }
 
+    @Test
+    public void Demo(){
+
+    }
 
 
 }
