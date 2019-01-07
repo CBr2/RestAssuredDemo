@@ -255,21 +255,18 @@ public class TesterHomeTest {
                 .statusCode(200)
                 .body(matchesJsonSchema(new File("D:\\霍格沃兹课程\\RestAssuredDemo\\ZuoYe5.json")));
     }
+    @Test
+    //extract实例，指所有处于extract后面的内容，将返回的数据存储给相应的变量
+    public void extractDemo(){
+        given().log().all()
+        .when()
+        .get("https://testerhome.com/api/v3/topics.json").prettyPeek()
+        .then().log().all()
+                .statusCode(200)
+                .extract()
 
-     @Test
-        public void extract(){
-            HashMap<String, Object> topic = given().log().all()
-                    .when().get("https://testerhome.com/api/v3/topics.json").prettyPeek()
-                    .then().log().all().statusCode(200)
-                    .extract().path("topics.find {it.title.contains(\"第五届\")}");
-            System.out.println(topic);
+    }
 
 
-            String login = given().log().all()
-                    .when().get("https://testerhome.com/api/v3/topics.json").prettyPeek()
-                    .then().log().all().statusCode(200)
-                    .extract().path("topics.find {it.title.contains(\"第五届\")}.user.login");
-            System.out.println(login);
-     }
 }
 

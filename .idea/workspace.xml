@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,13 +37,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3012" />
+          <entry key="java" value="3148" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3012" />
+          <entry key="JAVA" value="3148" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="152">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="45" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="273" selection-start-line="273" selection-end-line="273" />
+            <state relative-caret-position="102">
+              <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
@@ -164,8 +162,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="18" />
-    <option name="y" value="405" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
     <option name="width" value="1317" />
     <option name="height" value="915" />
   </component>
@@ -215,19 +213,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="RestAssuredDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAssuredDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RestAssuredDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAssuredDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -241,8 +226,8 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546667582119" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546828909838" />
+    <property name="last_opened_file_path" value="D:/郑州项目/zdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -267,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TesterHomeTest.ZuoYe5">
+  <component name="RunManager" selected="JUnit.TesterHomeTest.timeoutDemo">
     <configuration name="TesterHomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -296,16 +281,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesterHomeTest.extractDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
-      <option name="METHOD_NAME" value="extractDemo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TesterHomeTest.schema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -316,20 +291,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesterHomeTest.timeoutDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <option name="METHOD_NAME" value="timeoutDemo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TesterHomeTest" />
-      <item itemvalue="JUnit.TesterHomeTest.extractDemo" />
       <item itemvalue="JUnit.TesterHomeTest.extract" />
       <item itemvalue="JUnit.TesterHomeTest.schema" />
       <item itemvalue="JUnit.TesterHomeTest.ZuoYe5" />
+      <item itemvalue="JUnit.TesterHomeTest.timeoutDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TesterHomeTest.timeoutDemo" />
+        <item itemvalue="JUnit.TesterHomeTest" />
         <item itemvalue="JUnit.TesterHomeTest.ZuoYe5" />
         <item itemvalue="JUnit.TesterHomeTest.schema" />
         <item itemvalue="JUnit.TesterHomeTest.extract" />
-        <item itemvalue="JUnit.TesterHomeTest.extractDemo" />
-        <item itemvalue="JUnit.TesterHomeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,20 +329,11 @@
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
       <workItem from="1546393160069" duration="54610000" />
-      <workItem from="1546611702626" duration="9372000" />
+      <workItem from="1546611702626" duration="15717000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TesterHomeTest_xmlPostDemo - 2019.01.04 at 19h 35m 29s.xml">
-      <configuration name="TesterHomeTest.xmlPostDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_xmlPostDemo - 2019.01.04 at 19h 47m 09s.xml">
-      <configuration name="TesterHomeTest.xmlPostDemo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_xmlPostDemo - 2019.01.04 at 19h 47m 50s.xml">
-      <configuration name="TesterHomeTest.xmlPostDemo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TesterHomeTest_timeoutDemo - 2019.01.04 at 19h 52m 59s.xml">
       <configuration name="TesterHomeTest.timeoutDemo" configurationId="JUnit" />
     </history-entry>
@@ -379,9 +355,18 @@
     <history-entry file="TesterHomeTest_ZuoYe5 - 2019.01.05 at 13h 47m 03s.xml">
       <configuration name="TesterHomeTest.ZuoYe5" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TesterHomeTest - 2019.01.05 at 15h 38m 25s.xml">
+      <configuration name="TesterHomeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_timeoutDemo - 2019.01.07 at 10h 31m 19s.xml">
+      <configuration name="TesterHomeTest.timeoutDemo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_timeoutDemo - 2019.01.07 at 10h 31m 54s.xml">
+      <configuration name="TesterHomeTest.timeoutDemo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63982000" />
+    <option name="totallyTimeSpent" value="70327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +386,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2942603" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2069523" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3285968" />
@@ -409,7 +394,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4995958" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4995958" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39786857" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3268206" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -473,15 +458,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="152">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="45" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
+        <state relative-caret-position="102">
+          <caret line="258" column="35" selection-start-line="258" selection-start-column="35" selection-end-line="258" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
