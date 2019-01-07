@@ -36,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3448" />
+          <entry key="java" value="3529" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3448" />
+          <entry key="JAVA" value="3529" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="282" column="64" selection-start-line="282" selection-start-column="64" selection-end-line="282" selection-end-column="64" />
+            <state relative-caret-position="534">
+              <caret line="297" column="65" lean-forward="true" selection-start-line="297" selection-start-column="65" selection-end-line="297" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
@@ -227,7 +227,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546832658040" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546839044318" />
     <property name="last_opened_file_path" value="D:/郑州项目/zdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -330,14 +330,11 @@
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
       <workItem from="1546393160069" duration="54610000" />
-      <workItem from="1546611702626" duration="19387000" />
+      <workItem from="1546611702626" duration="20719000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TesterHomeTest_extractDemo - 2019.01.07 at 10h 54m 08s.xml">
-      <configuration name="TesterHomeTest.extractDemo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TesterHomeTest_extractDemo - 2019.01.07 at 10h 57m 32s.xml">
       <configuration name="TesterHomeTest.extractDemo" configurationId="JUnit" />
     </history-entry>
@@ -365,9 +362,12 @@
     <history-entry file="TesterHomeTest_extractDemo2 - 2019.01.07 at 11h 42m 54s.xml">
       <configuration name="TesterHomeTest.extractDemo2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TesterHomeTest_extractDemo2 - 2019.01.07 at 13h 12m 05s.xml">
+      <configuration name="TesterHomeTest.extractDemo2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73997000" />
+    <option name="totallyTimeSpent" value="75329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="282" column="64" selection-start-line="282" selection-start-column="64" selection-end-line="282" selection-end-column="64" />
+        <state relative-caret-position="534">
+          <caret line="297" column="65" lean-forward="true" selection-start-line="297" selection-start-column="65" selection-end-line="297" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
