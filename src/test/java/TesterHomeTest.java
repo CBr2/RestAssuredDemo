@@ -344,6 +344,7 @@ public class TesterHomeTest {
                 .body("data.items.quote.name",equalTo("上证指数"));
     }
     @Test
+    //手动解密：http://tool.oschina.net/encrypt?type=3
     public void decodeDemo2(){
         String body=given().auth().basic("hogwarts", "123456")
                 .when().get("http://jenkins.testing-studio.com:9001/base64.json")
