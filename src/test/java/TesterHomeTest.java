@@ -309,6 +309,25 @@ public class TesterHomeTest {
         System.out.println(topic);
         System.out.println(login);
     }
+    @Test
+    //基本的http认证
+    public void httpbasic(){
+        given()
+                .auth().basic("hogwarts","123456")
+        .when()
+                .get(" http://jenkins.testing-studio.com:9001/").prettyPeek()
+        .then()
+                .statusCode(200);
+    }
+    @Test
+    //auth2认证url:https://developer.github.com/v3/#authentication
+    public void auth2Demo(){
+        given()
+                .auth().oauth2("434131d6e03662d983197cb7b4bf550e583049ed")
+         .when()
+         .get("https://api.github.com/user/emails").prettyPeek()
+         .then().statusCode(200);
+    }
 
 }
 
