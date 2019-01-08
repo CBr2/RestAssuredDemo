@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="" />
+    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/WorkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorkTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4302" />
+          <entry key="java" value="4317" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4302" />
+          <entry key="JAVA" value="4317" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -86,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WorkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="95">
+              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -255,7 +257,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546916596867" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546918631681" />
     <property name="last_opened_file_path" value="D:/郑州项目/zdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -281,7 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WorkTest.getToken">
+  <component name="RunManager" selected="JUnit.WorkTest.sendMsg">
     <configuration name="TesterHomeTest.extractDemo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -339,9 +341,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WorkTest.sendMsg" />
         <item itemvalue="JUnit.WorkTest.getToken" />
         <item itemvalue="JUnit.WorkTest" />
-        <item itemvalue="JUnit.WorkTest.sendMsg" />
         <item itemvalue="JUnit.TesterHomeTest.extractDemo3" />
         <item itemvalue="JUnit.TesterHomeTest.extractDemo2" />
       </list>
@@ -358,7 +360,7 @@
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
       <workItem from="1546393160069" duration="54610000" />
-      <workItem from="1546611702626" duration="38597000" />
+      <workItem from="1546611702626" duration="38638000" />
     </task>
     <servers />
   </component>
@@ -395,7 +397,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93207000" />
+    <option name="totallyTimeSpent" value="93248000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -506,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WorkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="95">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />

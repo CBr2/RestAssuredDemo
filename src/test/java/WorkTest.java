@@ -1,5 +1,6 @@
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -13,7 +14,7 @@ public class WorkTest {
     public static void beforeClass(){
         RestAssured.useRelaxedHTTPSValidation();//https需要调用该api
     }
-    @Test
+    @Before
     //https://work.weixin.qq.com/api/doc#
     //AgentId:1000002
     //自建应用Secret:J7k_Ks2l6erzFfrPWBa9dVgTkqDc8vdOOQF-OcnanVI
@@ -30,6 +31,7 @@ public class WorkTest {
         System.out.println(token);
     }
     @Test
+    //消息示例/**/
         public void sendMsg(){
             HashMap<String, String> content = new HashMap<String, String>();
             content.put("content", "你的快递已到，请携带工卡前往邮件中心领取。\n出发前可查看<a href=\"http://work.weixin.qq.com\">邮件中心视频实况</a>，聪明避开排队。");
