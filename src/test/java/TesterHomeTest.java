@@ -6,16 +6,21 @@ import jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
+import java.lang.String;
 import java.io.File;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-
+import java.util.Base64;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.module.jsv.JsonSchemaValidator.*;
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.*;
+import static io.restassured.path.json.JsonPath.from;
+
+
 
 public class TesterHomeTest {
     @BeforeClass
@@ -328,6 +333,30 @@ public class TesterHomeTest {
          .get("https://api.github.com/user/emails").prettyPeek()
          .then().statusCode(200);
     }
+    @Test
+    //filter机制，用于解密
+    public void decodeDemo(){
+        given()
+                .auth().basic("hogwarts","123456")
+                .when()
+                .get("http://jenkins.testing-studio.com:9001/base64.json")
+                .then().statusCode(200)
+                .body("data.items.quote.name",equalTo("上证指数"));
+    }
+    @Test
+    public void decodeDemo2(){
+        String body=given().auth().basic("hogwarts", "123456")
+                .when().get("http://jenkins.testing-studio.com:9001/base64.json")
+                .then().statusCode(200)
+                .extract().body().asString();
+        System.out.println(body);
 
+        String bodyDecode=new String(Base64.getDecoder().decode(body.trim()));
+        System.out.println(bodyDecode);
+
+        String name=from(bodyDecode).get("data.items.quote.name[0]");
+        System.out.println(name);
+        assertThat(name, equalTo("上证指数"));
+    }
 }
 
