@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/WorkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WorkTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="-31">
+              <caret line="299" column="31" lean-forward="true" selection-start-line="299" selection-start-column="31" selection-end-line="299" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
@@ -88,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/WorkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state relative-caret-position="95">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -180,8 +178,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="139" />
-    <option name="y" value="172" />
+    <option name="x" value="442" />
+    <option name="y" value="361" />
     <option name="width" value="1317" />
     <option name="height" value="915" />
   </component>
@@ -257,7 +255,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546862761823" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546916354906" />
     <property name="last_opened_file_path" value="D:/郑州项目/zdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -283,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WorkTest">
+  <component name="RunManager" selected="JUnit.WorkTest.getToken">
     <configuration name="TesterHomeTest.extractDemo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -341,9 +339,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WorkTest.getToken" />
         <item itemvalue="JUnit.WorkTest" />
         <item itemvalue="JUnit.WorkTest.sendMsg" />
-        <item itemvalue="JUnit.WorkTest.getToken" />
         <item itemvalue="JUnit.TesterHomeTest.extractDemo3" />
         <item itemvalue="JUnit.TesterHomeTest.extractDemo2" />
       </list>
@@ -360,23 +358,11 @@
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
       <workItem from="1546393160069" duration="54610000" />
-      <workItem from="1546611702626" duration="33128000" />
+      <workItem from="1546611702626" duration="38113000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WorkTest_getToken - 2019.01.07 at 16h 52m 09s.xml">
-      <configuration name="WorkTest.getToken" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WorkTest_getToken - 2019.01.07 at 16h 54m 30s.xml">
-      <configuration name="WorkTest.getToken" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WorkTest_getToken - 2019.01.07 at 19h 19m 54s.xml">
-      <configuration name="WorkTest.getToken" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WorkTest_getToken - 2019.01.07 at 19h 33m 15s.xml">
-      <configuration name="WorkTest.getToken" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WorkTest_getToken - 2019.01.07 at 19h 47m 23s.xml">
       <configuration name="WorkTest.getToken" configurationId="JUnit" />
     </history-entry>
@@ -395,9 +381,21 @@
     <history-entry file="WorkTest_sendMsg - 2019.01.07 at 20h 04m 43s.xml">
       <configuration name="WorkTest.sendMsg" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="WorkTest_sendMsg - 2019.01.07 at 20h 05m 43s.xml">
+      <configuration name="WorkTest.sendMsg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkTest - 2019.01.07 at 20h 06m 07s.xml">
+      <configuration name="WorkTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkTest - 2019.01.08 at 09h 25m 37s.xml">
+      <configuration name="WorkTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WorkTest_getToken - 2019.01.08 at 10h 55m 52s.xml">
+      <configuration name="WorkTest.getToken" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87738000" />
+    <option name="totallyTimeSpent" value="92723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        <state relative-caret-position="-31">
+          <caret line="299" column="31" lean-forward="true" selection-start-line="299" selection-start-column="31" selection-end-line="299" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
@@ -508,8 +506,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WorkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state relative-caret-position="95">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />
