@@ -320,7 +320,7 @@ public class TesterHomeTest {
                 .statusCode(200);
     }
     @Test
-    //auth2认证url:https://developer.github.com/v3/#authentication
+    //auth2认证url:https://developer.github.com/v3/users/emails/
     public void auth2Demo(){
         given()
                 .auth().oauth2("434131d6e03662d983197cb7b4bf550e583049ed")
