@@ -397,5 +397,22 @@ public class TesterHomeTest {
                 .when().log().all().get("http://jenkins.testing-studio.com:9001/base64.json")
                 .then().statusCode(200).body("data.items.quote.name[0]", equalTo("上证指数"));
     }
+    @Test
+    //作业1：完成github的oauth2的认证测试用例，https://api.github.com/search/repositories
+    public void ZuoYe1_20190105(){
+        given()
+                .auth().oauth2("33c7a45595bd833be67d5ac5d7b97ba399fb2ed4")
+                .when()
+                .param("q","CBr2")
+                .get("https://api.github.com/search/repositories").prettyPeek()
+                .then().statusCode(200);
+    }
+    @Test
+    //利用filter完成对 http://jenkins.testing-studio.com:9001/base64base64.json 的解密
+    public void ZuoYe2_20190105(){
+       given().log().all()
+               .filter()
+    }
+
 }
 
