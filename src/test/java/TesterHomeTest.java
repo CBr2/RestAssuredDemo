@@ -33,7 +33,7 @@ public class TesterHomeTest {
         @Override
         public Response filter(FilterableRequestSpecification req, FilterableResponseSpecification res, FilterContext filterContext) {
             System.out.println("alter request");
-            req.header("USER", "seveniruby");
+            req.header("USER", "CBr2");
             Response response=filterContext.next(req, res);
 
             Response responseNew=new ResponseBuilder().clone(response)
@@ -390,7 +390,8 @@ public class TesterHomeTest {
     //利⽤filter机制实现⾃动解密
     //given + when -> filter -> alter request -> server -> origin response -> filter -> alter response -> then
     public void decodeByFilter(){
-        given().log().all().proxy(8080)
+        given().log().all()
+                //.proxy(8080)
                 .filter(decodeFilter)
                 .auth().basic("hogwarts", "123456")
                 .when().log().all().get("http://jenkins.testing-studio.com:9001/base64.json")
