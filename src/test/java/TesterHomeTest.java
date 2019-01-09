@@ -1,7 +1,12 @@
+import io.restassured.builder.ResponseBuilder;
+import io.restassured.filter.Filter;
+import io.restassured.filter.FilterContext;
 import io.restassured.http.ContentType;
 import io.restassured.mapper.ObjectMapperType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
+import io.restassured.specification.FilterableRequestSpecification;
+import io.restassured.specification.FilterableResponseSpecification;
 import jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -23,6 +28,27 @@ import static io.restassured.path.json.JsonPath.from;
 
 
 public class TesterHomeTest {
+
+    public static Filter decodeFilter=new Filter() {
+        @Override
+        public Response filter(FilterableRequestSpecification req, FilterableResponseSpecification res, FilterContext filterContext) {
+            System.out.println("alter request");
+            req.header("USER", "seveniruby");
+            Response response=filterContext.next(req, res);
+
+            Response responseNew=new ResponseBuilder().clone(response)
+                    .setBody(
+                            Base64.getDecoder().decode(response.body().asString().trim())
+                    )
+                    .setContentType(ContentType.JSON)
+                    .build();
+            System.out.println("alter response");
+            return responseNew;
+        }
+    };
+
+
+
     @BeforeClass
     public static void beforeAll() {
         useRelaxedHTTPSValidation();
@@ -358,6 +384,17 @@ public class TesterHomeTest {
         String name=from(bodyDecode).get("data.items.quote.name[0]");
         System.out.println(name);
         assertThat(name, equalTo("上证指数"));
+    }
+
+    @Test
+    //利⽤filter机制实现⾃动解密
+    //given + when -> filter -> alter request -> server -> origin response -> filter -> alter response -> then
+    public void decodeByFilter(){
+        given().log().all().proxy(8080)
+                .filter(decodeFilter)
+                .auth().basic("hogwarts", "123456")
+                .when().log().all().get("http://jenkins.testing-studio.com:9001/base64.json")
+                .then().statusCode(200).body("data.items.quote.name[0]", equalTo("上证指数"));
     }
 }
 
