@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66ce78b6-3166-480d-bec1-f3f5f2aa2171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TesterHomeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4993" />
+          <entry key="java" value="5242" />
           <entry key="xml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4993" />
+          <entry key="JAVA" value="5242" />
           <entry key="XML" value="40" />
         </counts>
       </usages-collector>
@@ -75,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
+            <state relative-caret-position="220">
+              <caret line="438" column="9" selection-start-line="438" selection-start-column="9" selection-end-line="438" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#670#671#0" expanded="true" />
@@ -194,8 +193,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="121" />
-    <option name="y" value="93" />
+    <option name="x" value="271" />
+    <option name="y" value="525" />
     <option name="width" value="1640" />
     <option name="height" value="908" />
   </component>
@@ -275,7 +274,7 @@
     <property name="SearchEverywhereHistoryKey" value="百度为您找到相关结果约&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547037917625" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547043704060" />
     <property name="last_opened_file_path" value="D:/郑州项目/zdh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -301,15 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TesterHomeTest.ZuoYe1_20190105">
-    <configuration name="TesterHomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TesterHomeTest.jenkinsBySessionFilter">
     <configuration name="TesterHomeTest.ZuoYe1_20190105" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -340,11 +331,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesterHomeTest.decodeDemo2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesterHomeTest.jenkinsBySessionFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
-      <option name="METHOD_NAME" value="decodeDemo2" />
+      <option name="METHOD_NAME" value="jenkinsBySessionFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesterHomeTest.jenkins_login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterHomeTest" />
+      <option name="METHOD_NAME" value="jenkins_login" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -352,18 +353,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TesterHomeTest.auth2Demo" />
-      <item itemvalue="JUnit.TesterHomeTest.decodeDemo2" />
       <item itemvalue="JUnit.TesterHomeTest.decodeByFilter" />
-      <item itemvalue="JUnit.TesterHomeTest" />
       <item itemvalue="JUnit.TesterHomeTest.ZuoYe1_20190105" />
+      <item itemvalue="JUnit.TesterHomeTest.jenkins_login" />
+      <item itemvalue="JUnit.TesterHomeTest.jenkinsBySessionFilter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TesterHomeTest.jenkinsBySessionFilter" />
+        <item itemvalue="JUnit.TesterHomeTest.jenkins_login" />
         <item itemvalue="JUnit.TesterHomeTest.ZuoYe1_20190105" />
         <item itemvalue="JUnit.TesterHomeTest.decodeByFilter" />
         <item itemvalue="JUnit.TesterHomeTest.auth2Demo" />
-        <item itemvalue="JUnit.TesterHomeTest" />
-        <item itemvalue="JUnit.TesterHomeTest.decodeDemo2" />
       </list>
     </recent_temporary>
   </component>
@@ -378,26 +379,11 @@
       <option name="presentableId" value="Default" />
       <updated>1546393155024</updated>
       <workItem from="1546393160069" duration="54610000" />
-      <workItem from="1546611702626" duration="55062000" />
+      <workItem from="1546611702626" duration="58973000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TesterHomeTest_decodeDemo2 - 2019.01.08 at 22h 46m 08s.xml">
-      <configuration name="TesterHomeTest.decodeDemo2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_decodeDemo2 - 2019.01.08 at 22h 58m 07s.xml">
-      <configuration name="TesterHomeTest.decodeDemo2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_decodeDemo2 - 2019.01.09 at 10h 40m 24s.xml">
-      <configuration name="TesterHomeTest.decodeDemo2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest_decodeByFilter - 2019.01.09 at 13h 21m 22s.xml">
-      <configuration name="TesterHomeTest.decodeByFilter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TesterHomeTest - 2019.01.09 at 14h 00m 14s.xml">
-      <configuration name="TesterHomeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TesterHomeTest_auth2Demo - 2019.01.09 at 14h 01m 19s.xml">
       <configuration name="TesterHomeTest.auth2Demo" configurationId="JUnit" />
     </history-entry>
@@ -413,9 +399,24 @@
     <history-entry file="TesterHomeTest_ZuoYe1_20190105 - 2019.01.09 at 20h 40m 27s.xml">
       <configuration name="TesterHomeTest.ZuoYe1_20190105" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TesterHomeTest_jenkins_login - 2019.01.09 at 21h 45m 13s.xml">
+      <configuration name="TesterHomeTest.jenkins_login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_jenkins_login - 2019.01.09 at 21h 46m 54s.xml">
+      <configuration name="TesterHomeTest.jenkins_login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_jenkins_login - 2019.01.09 at 21h 53m 46s.xml">
+      <configuration name="TesterHomeTest.jenkins_login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_jenkinsBySessionFilter - 2019.01.09 at 22h 05m 02s.xml">
+      <configuration name="TesterHomeTest.jenkinsBySessionFilter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesterHomeTest_jenkinsBySessionFilter - 2019.01.09 at 22h 17m 01s.xml">
+      <configuration name="TesterHomeTest.jenkinsBySessionFilter" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109672000" />
+    <option name="totallyTimeSpent" value="113583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,6 +431,36 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.1301536" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5004042" side_tool="true" weight="0.40319717" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4995958" visible="true" weight="0.23445825" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39786857" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.38010657" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3285968" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294686" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
@@ -458,7 +489,7 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3294686" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -539,8 +570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TesterHomeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="428" column="10" selection-start-line="428" selection-start-column="10" selection-end-line="428" selection-end-column="10" />
+        <state relative-caret-position="220">
+          <caret line="438" column="9" selection-start-line="438" selection-start-column="9" selection-end-line="438" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#670#671#0" expanded="true" />
