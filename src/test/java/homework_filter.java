@@ -18,8 +18,9 @@ public class homework_filter{
         @Override
         public Response filter(FilterableRequestSpecification req, FilterableResponseSpecification res, FilterContext filterContext) {
             Response response=filterContext.next(req, res);
-            String resp = response.body().asString().trim().replace("\n","");
-            String decode1 = new String(Base64.getDecoder().decode(resp)).trim();
+            // String resp = response.body().asString().trim().replace("\n","");
+            //String decode1 = new String(Base64.getDecoder().decode(resp)).trim();
+            String decode1 = new String(Base64.getDecoder().decode(response.body().asString().trim().replace("\n",""))).trim();
             String decode2 = new String(Base64.getDecoder().decode(decode1)).trim();
             Response responseNew=new ResponseBuilder().clone(response)
                     .setBody(decode2)
@@ -31,7 +32,7 @@ public class homework_filter{
     @Test
     public void decodeByFilter(){
         given().log().all()
-                .proxy(8080)
+                //.proxy(8080)
                 .filter(decodeFilter)
                 .auth().basic("hogwarts", "123456")
                 .when().log().all().header("USER", "CBr2")

@@ -409,7 +409,7 @@ public class TesterHomeTest {
     //作业1：完成github的oauth2的认证测试用例，https://api.github.com/search/repositories
     public void ZuoYe1_20190105(){
         given()
-                .auth().oauth2("33c7a45595bd833be67d5ac5d7b97ba399fb2ed4")
+                .auth().oauth2("5c26cf104c6bd81ea430d82386dce0f6b6c58dc6")
                 .when()
                 .param("q","CBr2")
                 .get("https://api.github.com/search/repositories").prettyPeek()
@@ -465,25 +465,6 @@ public class TesterHomeTest {
                 .then().log().all().statusCode(200);
     }
     }
-
-        /*
-        Filter decodeFilter2=new Filter() {
-            @Override
-            public Response filter(FilterableRequestSpecification req2, FilterableResponseSpecification res2, FilterContext filterContext2) {
-                req2.header("USER", "CBr2");
-                Response response=filterContext2.next(req2, res2);
-                Response responseNew2=new ResponseBuilder().clone(response)
-                        .setBody(
-                                Base64.getDecoder().decode(response.body().asString().trim())
-                        )
-                        .setContentType(ContentType.JSON)
-                        .build();
-                // System.out.println("alter response");
-                return responseNew2;
-            }
-        };
-        */
-
 
 
 
