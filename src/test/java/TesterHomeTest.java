@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.Base64;
 import static io.restassured.RestAssured.*;
+
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.hamcrest.Matchers.*;
@@ -32,6 +33,7 @@ import static io.restassured.path.json.JsonPath.from;
 
 
 public class TesterHomeTest {
+
 
     public static Filter decodeFilter=new Filter() {
         @Override
@@ -52,10 +54,12 @@ public class TesterHomeTest {
     };
 
 
+    public static SessionFilter sessionFilter=new SessionFilter();
 
     @BeforeClass
     public static void beforeAll() {
         useRelaxedHTTPSValidation();
+
     }
 
     @Test
@@ -412,10 +416,6 @@ public class TesterHomeTest {
                 .then().statusCode(200);
     }
     @Test
-    //利用filter完成对 http://jenkins.testing-studio.com:9001/base64base64.json 的解密
-    public void ZuoYe2_20190105(){ }
-
-    @Test
     public void jenkins_login(){
         //RestAssured.proxy(8080);
 
@@ -464,5 +464,27 @@ public class TesterHomeTest {
                 .when().log().all().get("http://jenkins.testing-studio.com:8080/")
                 .then().log().all().statusCode(200);
     }
-}
+    }
+
+        /*
+        Filter decodeFilter2=new Filter() {
+            @Override
+            public Response filter(FilterableRequestSpecification req2, FilterableResponseSpecification res2, FilterContext filterContext2) {
+                req2.header("USER", "CBr2");
+                Response response=filterContext2.next(req2, res2);
+                Response responseNew2=new ResponseBuilder().clone(response)
+                        .setBody(
+                                Base64.getDecoder().decode(response.body().asString().trim())
+                        )
+                        .setContentType(ContentType.JSON)
+                        .build();
+                // System.out.println("alter response");
+                return responseNew2;
+            }
+        };
+        */
+
+
+
+
 
